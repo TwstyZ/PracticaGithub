@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controladorx;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Formulario');
 });
+Route::post('procesarRecuerdo',[Controladorx::class,'Recuerdo'])->name('coccion');
